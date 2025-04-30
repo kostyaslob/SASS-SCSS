@@ -1,5 +1,2 @@
-$main-color-1: salmon;
-
-body {
-    background-color: $main-color-1;
-}
+@use "basic";
+@use "variables";

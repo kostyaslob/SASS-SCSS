@@ -1,4 +1,3 @@
-body {
-  background-color: salmon;
-}
+@use "basic";
+@use "variables";
 /*# sourceMappingURL=index.css.map */
