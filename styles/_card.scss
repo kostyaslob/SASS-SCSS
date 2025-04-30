@@ -1,0 +1,48 @@
+@use "variables" as var;
+@use "mixins";
+
+.card {
+    border: {
+        width: 2px;
+        style: solid;
+        color: var.$main-color-5;
+        radius: 5px;
+    }
+    padding: 0.5em;
+    width: 300px;
+
+    &-title {
+         margin: 0.3em;
+         text-transform: uppercase; 
+         
+         &:hover {
+            cursor: pointer;
+            color: var.$main-color-4;
+         }
+    }
+
+    &-description {
+        margin: 0.5em;
+        text-align: justify;
+    }
+
+    &-caption {
+        margin: 0.5em;
+        font-style: italic;
+    }
+
+    &:hover {
+        background-color: var.$main-color-3;
+        cursor: pointer;
+    }
+
+    @media (min-width: var.$media-776) {
+        & {
+            flex-grow: 1;
+
+            &-title {
+                color: var.$main-color-2;
+            }
+        }
+    }
+}

@@ -1,8 +1,10 @@
-@use "variables" as v;
+@use "variables" as var;
 
 * {
     box-sizing: border-box;
 }
+
 body {
-    background-color: v.$main-color-2;
+    background-color: var.$main-color-1;
+    margin: 0;
 }
